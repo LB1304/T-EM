@@ -1,16 +1,16 @@
-<h2 align="center">Tempered Expectation-Maximization algorithm</h2>
+<h1 align="center">Tempered Expectation-Maximization algorithm</h1>
 
-<h5 align="center">**Luca Brusa** &middot; **Francesco Bartolucci** &middot; **Fulvia Pennoni**</h5>
+<h4 align="center">Luca Brusa &middot; Francesco Bartolucci &middot; Fulvia Pennoni</h4>
 
 <br>
 
-<h4>Overview</h4>
+<h3>Overview</h3>
 
 This repository contains the <tt>R</tt> functions to perform maximum likelihood estimation of the parameters of two main classes of discrete latent variable models: latent class (LC) and hidden Markov (HM) models. Both the standard Expectation-Maximization algorithm and different versions of the proposed tempered EM (T-EM) algorithm are implemented
 
 ---
 
-<h4>Description of the content</h4>
+<h3>Description of the content</h3>
 
 The repository contains:
 
@@ -25,7 +25,7 @@ The repository contains:
 
 ---
 
-<h4>Usage</h4>
+<h3>Usage</h3>
 
 1. **Latent Class model** (function `est_LC`)
 
@@ -70,7 +70,7 @@ The repository contains:
 
 ---
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
   ```r
   load("./Dataset/simulated_sample_LC.RData")
