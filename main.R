@@ -2,12 +2,12 @@
 ## Authors: Luca Brusa, Francesco Bartolucci, Fulvia Pennoni ##
 
 files.sources = list.files(path = "./functions", pattern = ".R")
-sapply(paste0("./functions/", files.sources), source)
+sapply(paste0("./Functions/", files.sources), source)
 
 
 
 #### 1. Latent class model - Simulated dataset ####
-load("./Dataset/simulated_sample_LC.RData")
+load("./Data/simulated_sample_LC.RData")
 
 # Standard EM algorithm (computational time: around 1 second)
 set.seed(24)
@@ -30,7 +30,7 @@ print(c(std_est$lk, mon_est$lk, osc_est$lk))
 
 
 #### 2. Hidden Markov model (categorical responses) - Simulated dataset ####
-load("./Dataset/simulated_sample_HM_cat.RData")
+load("./Data/simulated_sample_HM_cat.RData")
 
 # Standard EM algorithm (computational time: around 5 seconds)
 set.seed(24)
@@ -48,7 +48,7 @@ print(c(std_est$lk, mon_est$lk))
 
 
 #### 3. Hidden Markov model (continuous responses) - Simulated dataset ####
-load("./Dataset/simulated_sample_HM_cont.RData")
+load("./Data/simulated_sample_HM_cont.RData")
 
 # Standard EM algorithm (computational time: around 5 seconds)
 set.seed(24)
