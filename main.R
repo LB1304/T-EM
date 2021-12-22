@@ -1,6 +1,17 @@
 ######### Tempered Expectation-Maximization algorithm #########
 ## Authors: Luca Brusa, Francesco Bartolucci, Fulvia Pennoni ##
 
+
+## Dependencies ##
+req_pack <- c("MultiLCIRT", "dplyr", "mvtnorm", "phonTools")
+for (p in req_pack) {
+  if(!require(p, character.only = TRUE)) {
+    install.packages(p)
+    library(p, character.only = TRUE)
+  }
+}
+
+## Load EM and T-EM functions ##
 files.sources = list.files(path = "./functions", pattern = ".R")
 sapply(paste0("./Functions/", files.sources), source)
 
